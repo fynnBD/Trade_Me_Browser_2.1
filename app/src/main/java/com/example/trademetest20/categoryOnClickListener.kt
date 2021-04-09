@@ -21,10 +21,11 @@ class categoryOnClickListener(val context : Context) : AdapterView.OnItemClickLi
             }
         }
         else{
-            for(i in activity.rootCategory?.Subcategories!!) {
-                if (i.Name == item)
-                {
-                    activity.URLQuery(i.Number)
+            if(activity.rootCategory?.Subcategories != null) {
+                for (i in activity.rootCategory?.Subcategories!!) {
+                    if (i.Name == item) {
+                        activity.URLQuery(i.Number)
+                    }
                 }
             }
 

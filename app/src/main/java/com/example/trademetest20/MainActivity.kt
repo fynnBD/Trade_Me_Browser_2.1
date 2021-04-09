@@ -101,6 +101,10 @@ class MainActivity : AppCompatActivity() {
         return array
     }
 
+
+    /*
+ 
+     */
     fun URLQuery(id: String?) {
         val request = ServiceBuilder.buildService(networkInterface::class.java)
         val call = request.getRoot(id)
